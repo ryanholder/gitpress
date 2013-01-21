@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GitPress</title>
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+    <link href="assets/stylesheets/main.css" rel="stylesheet">    
+</head>
+<body>
+    <header class="header">
+        <h1>- Peach -</h1>
+        <strong>Safely change the domain name in your database dump.</strong>
+    </header>
+    <div class="pane">
+        <section id="upload" class="upload">
+            <div class="copy">
+                <h2>To start, drag &amp; drop a dump.</h2>
+                <small>(a .sql file)</small>
+            </div>
+        </section>
+        <section id="domain-form" class="domain-form">
+            <div class="copy">
+                <label for="old-domain">Change</label>
+                <input type="text" name="old" id="old-domain" placeholder="http://old-domain.com" />
+                <label for="new-domain">to</label>
+                <input type="text" name="new" id="new-domain" placeholder="http://new-domain.com" />
+                <button class="go">GO!</button>
+                <div class="buttons">
+                    <a class="cancel" href="javascript:void(0)">Start Over</a>
+                    <a class="download" href="javascript:void(0)">Download</a>
+                </div>
+                <div class="output"></div>
+            </div>
+        </section>
+    </div>
+    <script src="vendor/jquery.js"></script>
+    <script src="vendor/jquery.activity-indicator-1.0.0.js"></script>
+    <script src="assets/javascripts/migrate.js"></script>
+    <script src="assets/javascripts/filemanager.js"></script>
+    <script src="assets/javascripts/peach.js"></script>
+</body>
+</html>

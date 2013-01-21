@@ -1,0 +1,3 @@
+function launchAppAfterEnable(appId) {
+    chrome.send('launchApp', [appId, APP_LAUNCH.NTP_APP_RE_ENABLE]);
+  }
